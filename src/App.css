@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  background-color: chartreuse;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cadastro, .cadastro h2, .preencher{
+  background-color: green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cadastro{
+  margin-left: 34%;
+  margin-top: 5%;
+  height: auto;
+  width: 350px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+
+.cadastro h2{
+  margin-bottom: 2%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cadastro button{
+  height: 25px;
+  width: 250px;
+  background-color: rgb(128, 0, 0);
+  color: white;
+  margin-bottom: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.preencher{
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preencher input{
+  background-color: white;
+  margin-top: 8%;
+  width: 250px;
+  height: 25px;
+}
+
+.preencher input::placeholder{
+  color: black;
+}
+
+.listCadastro{
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-right: 5%;
+}
+
+.itemCadastro{
+  background-color: rgb(212, 180, 180);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.itemCadastro h3{
+  background-color: rgb(212, 180, 180);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 250px;
 }
